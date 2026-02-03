@@ -1,0 +1,7 @@
+### Python ###
+# Виртуальное окружение
+.venv/
+venv/
+__pycache__/
+UI/*.ui
+

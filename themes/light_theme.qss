@@ -1,0 +1,57 @@
+QPushButton {
+	border-style: outset;
+	border-width: 1px;
+	border-color: #000000;
+	border-radius: 5px;
+	background-color: #dbdbdb;
+	min-height: 20px
+}
+
+QComboBox {
+    border: 1px solid #000000;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QTableView {
+	color: black;
+	background-color: #e0e0e0;
+}
+
+QLineEdit {
+	border: 1px outset #000000;
+	min-height: 20px;
+	border-radius: 5px;
+}
+
+QLineEdit {
+	color: black;
+}
+
+QTableView {
+    show-decoration-selected: 1; /* make the selection span the entire width of the view */
+}
+
+QTableView::item:alternate {
+    background: #EEEEEE;
+}
+
+QTableView::item:selected {
+    border: 1px solid #6a6ea9;
+}
+
+QTableView::item:selected:!active {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #ABAFE5, stop: 1 #8588B2);
+}
+
+QTableView::item:selected:active {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #6a6ea9, stop: 1 #888dd9);
+}
+
+QTableView::item:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FAFBFE, stop: 1 #DCDEF1);
+}
